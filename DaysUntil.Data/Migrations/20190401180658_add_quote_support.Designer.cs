@@ -4,14 +4,16 @@ using DaysUntil.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DaysUntil.Data.Migrations
 {
     [DbContext(typeof(DaysUntilContext))]
-    partial class DaysUntilDataContextModelSnapshot : ModelSnapshot
+    [Migration("20190401180658_add_quote_support")]
+    partial class add_quote_support
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

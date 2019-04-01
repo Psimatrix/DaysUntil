@@ -12,6 +12,8 @@ namespace DaysUntil.Data
     {
         public DbSet<Event> Events { get; set; }
 
+        public DbSet<Quote> Quotes { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //TODO move connection string into configuration file and read from it
